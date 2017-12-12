@@ -10,17 +10,17 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
 public class RetirementApp extends Application {
-
+	private Stage primaryStage;
 	private RetirementController controller;
 	
 	public static void main(String[] args) {
 		launch(args);
 
 	}
-
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
+		this.primaryStage = primaryStage;
 		try {
 			// Load person overview.
 			FXMLLoader loader = new FXMLLoader();
@@ -44,5 +44,7 @@ public class RetirementApp extends Application {
 		}
 		
 	}
-
+	public Stage getPrimaryStage() {
+		return primaryStage;
+	}
 }

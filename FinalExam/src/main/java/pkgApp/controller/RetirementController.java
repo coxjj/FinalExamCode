@@ -131,7 +131,7 @@ public class RetirementController implements Initializable {
 			Double.parseDouble(txtReturnRetired.getText());
 		} catch (NumberFormatException e) {
 			Alert _alert = new Alert(Alert.AlertType.INFORMATION);
-			 _alert.setContentText("Enter a valid retired return as a decimal ");
+			 _alert.setContentText("Enter your retired return as a decimal ");
 			 _alert.show();
 			 return false;
 		}
